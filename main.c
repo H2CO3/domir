@@ -109,10 +109,10 @@ int main()
     PortPin ir_led_port = { &PORTB, 4 };
     set_bit(ir_led_ddr);
 
-	while (1) {
+    while (1) {
         send_packet_classic(ir_led_port, 0x00, 0xa2);
         _delay_ms(1000);
-	}
+    }
 
-	return 0;
+    return 0;
 }
